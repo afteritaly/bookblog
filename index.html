@@ -21,7 +21,7 @@
     ☰
   </button>
 </div>
-    <ul>
+    <ul id="nav-menu">
       <li><a href="index.html"><b>Home</b></a></li>
       <li><a href="methodology.html"><b>Recensioni</b></a></li>
       <li><a href="sparqlqueries.html"><b>Consigli di lettura</b></a></li>
@@ -64,11 +64,15 @@
 	
   </main>
 <script>
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("nav-menu");
+document.addEventListener("DOMContentLoaded", () => {
 
-hamburger.addEventListener("click", () => {
-  menu.classList.toggle("active");
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
 });
 </script>
 </body>
