@@ -123,15 +123,17 @@ nav li:hover > a {
 
 @media screen and (max-width: 768px) {
 
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+ nav {
+    height: auto;
+    padding: 10px 0;
   }
 
-  nav li {
-    margin: 0;
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  body {
+    padding-top: 120px;
   }
 
 }
@@ -273,15 +275,15 @@ h3 {
 @media screen and (max-width: 768px) {
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem !important;
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem !important;
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem !important;
   }
 
 }
