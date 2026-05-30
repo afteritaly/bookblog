@@ -121,6 +121,21 @@ nav li:hover > a {
   background-color: #b1199a;
 }
 
+@media screen and (max-width: 768px) {
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+}
+
 /* Contenuto principale */
 body.home .title-container {
   min-height: 400px;
@@ -253,6 +268,22 @@ h3 {
   color: #a4118d;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
 }
 
 /* text area queries */
