@@ -163,6 +163,93 @@ nav {
 .logo {
   display: block;
 }
+
+/* FIX NAVBAR + SPAZI MOBILE */
+@media screen and (max-width: 768px) {
+
+  body {
+    padding-top: 70px;
+  }
+
+  .nav-container {
+    height: 70px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    flex-direction: column;
+    gap: 0;
+
+    background-color: #da3cc2;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  body.home .title-container,
+  body.recensioni .title-container,
+  body.sparqlqueries .title-container,
+  body.rdftriples .title-container,
+  body.llmprompting .title-container,
+  body.challenges .title-container,
+  body.conclusions .title-container {
+    min-height: 220px;
+    padding: 2.5rem 1rem;
+  }
+
+  main {
+    padding: 14px;
+  }
+
+  h1 {
+    margin-bottom: 0.7em;
+  }
+
+  h2,
+  h3 {
+    margin: 0 4vw 0.7em 4vw;
+  }
+
+  p,
+  ul,
+  .lista-speciale {
+    padding: 0 4vw;
+  }
+
+  .page-header {
+    padding: 40px 20px 25px 20px;
+  }
+}
+
 /* Contenuto principale */
 body.home .title-container {
   min-height: 400px;
