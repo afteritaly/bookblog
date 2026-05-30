@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Palazzo dei Diamanti - challenges</title>
+  <link rel="stylesheet" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	
+</head>
+<body class="challenges">
+
+ <nav>
+    <ul>
+	   <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="methodology.html"><b>Methodology</b></a></li>
+      <li><a href="sparqlqueries.html"><b>SPARQL queries <br>
+	  Gap identification</b></a></li>
+       <li><a href="LLMprompting.html"><b>LLM prompting</b></a></li>
+	   <li><a href="rdftriples.html"><b>RDF triples</b></a></li>
+      <li><a href="challenges.html"><b>Challenges</b></a></li>
+	  <li><a href="conclusions.html"><b>Conclusions</b></a></li>
+   
+    </ul>
+ </nav>
+  <main>
+<div class="title-container">
+  <h1 id="arch-title" class="anchor-offset" style="color: white;">
+    Challenges <br>
+  </h1>
+</div>
+<br>
+<br>
+<br>
+	  <br>
+    <h2>Our challenges 
+	    <br>and how we overcame them</h2>
+    <br>
+    <p> While working on our project, we were met with some challenges along the way. In this page, we will talk about the hardships we faced and how we sorted our problems out.</p>
+<br>
+	    <h3>🤖LLM prompting</h3>
+<br>
+	  <p>First of all, the <strong><a href="https://en.wikipedia.org/wiki/Large_language_model" class="no-underline-link" target="_blank">LLMs</a></strong> were not always reliable. 
+	    For example, the result we got with <strong><a href="https://chatgpt.com/?model=auto" class="no-underline-link" target="_blank">Chat GPT</a></strong> on the <strong><a href="LLMprompting.html" class="no-underline-link">LLM prompting</a></strong> step of our project was incorrect, 
+	    specifically with the Few-shot technique. Thankfully, the information retrieved in this process was easily fact-checked with the other <strong><a href="https://en.wikipedia.org/wiki/Large_language_model" class="no-underline-link" target="_blank">LLM</a></strong> <strong><a href="https://chat.deepseek.com/" class="no-underline-link" target="_blank">(DeepSeek)</a></strong>, 
+	    <strong><a href="https://www.wikipedia.org/" class="no-underline-link" target="_blank">Wikipedia</a></strong>, or even re-trying with the same prompt to get a different answer.  </p>
+<br>
+	  <p>Another issue we came in contact with when working with <strong><a href="https://en.wikipedia.org/wiki/Large_language_model" class="no-underline-link" target="_blank">LLMs</a></strong> was with the triples, specifically in constructing the queries to add in <strong><a href="https://dati.cultura.gov.it/sparql" class="no-underline-link" target="_blank">ArCo SPARQL</a></strong>. 
+	  Chat GPT added the keyword <code>“BIND”</code> in the queries multiple times, which did not work, and which <strong><a href="https://chat.deepseek.com/" class="no-underline-link" target="_blank">DeepSeek</a></strong> avoided. Besides, both the <strong><a href="https://en.wikipedia.org/wiki/Large_language_model" class="no-underline-link" target="_blank">LLMs</a></strong> did not know that 
+	  “ex” is a placeholder, and when we were trying to construct the query for the commissioner of <strong><a href="https://en.wikipedia.org/wiki/Palazzo_dei_Diamanti" class="no-underline-link" target="_blank">Palazzo dei Diamanti</a></strong>, they did not use the correct label. To overcome these problems,
+	  we had to manually check and correct the given queries, thanks to the notes from our course.</p>
+	  <br>  
+	  <h3>❓SPARQL queries</h3>
+	 <p>Furthermore, we had to face the unfamiliarity of <strong><a href="http://wit.istc.cnr.it/arco" class="no-underline-link" target="_blank">ArCo</a></strong> keywords. In the first part of our project, we had difficulties in understanding ArCo keywords and strict syntax
+		 while making the first couple of queries. To do get used to them, we had to check exsisting SPARQL patterns and queries to better our abilities in creating queries.
+		 Moreover, we used <strong><a href="https://chatgpt.com/?model=auto" class="no-underline-link" target="_blank">ChatGPT</a></strong> to help us adjusting some incorrect syntax for our queries.
+		 
+	 </p>
+	  <br>
+	  <h3>💻GitHub</h3>
+	  <p>While working on <strong><a href="https://github.com/" class="no-underline-link" target="_blank">GitHub</a></strong>, we found some issues if two or more members of the group modified the same webpage or two webpages at the same time. 
+		  As a matter of fact, <strong><a href="https://github.com/" class="no-underline-link" target="_blank">GitHub</a></strong> only updated one page at a time. To solve this problem, we used another application (<strong><a href="https://notepad-plus-plus.org/downloads/" class="no-underline-link" target="_blank">Notepad++</a></strong>) to work on our <strong><a href="https://en.wikipedia.org/wiki/HTML" class="no-underline-link" target="_blank">HTML</a></strong> and <strong><a href="https://en.wikipedia.org/wiki/CSS" class="no-underline-link" target="_blank">CCS</a></strong> files, and 
+		  then uploaded them one at a time.
+		  
+	  </p>
+	  <br>
+	  <h3>🎨​CSS file</h3>
+<br>
+	  <p>Lastly, we encountered several challenges when constructing the <strong><a href="https://en.wikipedia.org/wiki/CSS" class="no-underline-link" target="_blank">CSS</a></strong> file of our website, 
+	    specifically in the layout and formatting in terms of layout and style. Our problem came also because we wanted to create a formatting style that was different from the other templates we saw. 
+	    We asked <strong><a href="https://chatgpt.com/?model=auto" class="no-underline-link" target="_blank">ChatGTP</a></strong> for help, and it gave us many solutions. Many of them were valuable, whereas others were not correct, 
+	    so we had to go through many stages of trials and errors to fix it in the best of our capacities. Apart from <strong><a href="https://chatgpt.com/?model=auto" class="no-underline-link" target="_blank">Chat GPT</a></strong>, websites such as <strong><a href="https://www.w3schools.com/" class="no-underline-link" target="_blank">W3Schools</a></strong> were particularly helpful. </p>
+
+<br>
+<br>
+<br>
+<div id="footer_wrap">
+ <footer class="inner">
+        <p style="color: black; font-size: 1.1em;">Website published with <a href="https://pages.github.com" class="no-underline-link github-pages-link-hover" style="color: black;"> GitHub Pages</a></p>
+      </footer>
+    </div>
+	
+  </main>
+</body>
+</html>

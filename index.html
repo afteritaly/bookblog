@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Palazzo dei Diamanti</title>
+  <link rel="stylesheet" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.google.com/specimen/Rampart+One?query=Rampart+One" rel="stylesheet">
+
+</head>
+<body class="home">
+
+ <nav>
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="methodology.html"><b>Methodology</b></a></li>
+      <li><a href="sparqlqueries.html"><b>SPARQL queries <br>
+	  Gap identification</b></a></li>
+       <li><a href="LLMprompting.html"><b>LLM prompting</b></a></li>
+	   <li><a href="rdftriples.html"><b>RDF triples</b></a></li>
+      <li><a href="challenges.html"><b>Challenges</b></a></li>
+	  <li><a href="conclusions.html"><b>Conclusions</b></a></li>
+    </ul>
+ </nav>
+  <main>
+<div class="title-container">
+  <h1 id="arch-title" class="anchor-offset" style="color: white;">
+    PALAZZO DEI DIAMANTI <br>
+	ArCo semantic enrichment <br>
+  </h1>
+</div>
+<br>
+<br>
+    <br>
+    <h2>Introduction</h2>
+    <br>
+    <p> This project was carried out as part of the <strong><a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2024/502752" class="no-underline-link" target="_blank">KE4H (Knowledge Engineering for the Humanities)</a></strong> course at the <strong><a href="https://www.unibo.it/it" class="no-underline-link" target="_blank">University of Bologna</a></strong>. 
+	    For this purpose, we used <strong><a href="http://wit.istc.cnr.it/arco" class="no-underline-link" target="_blank">ArCo</a></strong> as our foundational knowledge graph. <strong><a href="http://wit.istc.cnr.it/arco" class="no-underline-link" target="_blank">ArCo</a></strong> is the official ontology network and RDF dataset developed by the <strong><a href="https://cultura.gov.it/" class="no-underline-link" target="_blank">Italian Ministry of Culture</a></strong>.
+	    We found that the cultural knowledge graph offers a rich and well-organized representation of <strong><a href="https://en.wikipedia.org/wiki/Italy" class="no-underline-link" target="_blank">Italy</a></strong>'s cultural heritage, supported by a <strong><a href="https://dati.cultura.gov.it/sparql" class="no-underline-link" target="_blank">SPARQL endpoint</a></strong> that enables complex semantic querying, but it presents some gaps. <br>
+	    <br>
+ The case study chosen for our project was the <strong><a href="https://en.wikipedia.org/wiki/Palazzo_dei_Diamanti" class="no-underline-link" target="_blank">Palazzo dei Diamanti</a></strong>. Constructed in the late 15th century and attributed to the architect <strong><a href="https://en.wikipedia.org/wiki/Biagio_Rossetti" class="no-underline-link" target="_blank">Biagio Rossetti</a></strong>, the building is famous for its distinctive diamond-shaped exterior walls, which give the palace its name. 
+	    
+</p>
+<br>
+<br>
+<h2>Why did we choose <strong><a href="https://en.wikipedia.org/wiki/Palazzo_dei_Diamanti" class="no-underline-link" target="_blank">Palazzo dei Diamanti</a></strong>?</h2>
+	  <br>
+	  <p><strong><a href="https://en.wikipedia.org/wiki/Palazzo_dei_Diamanti" class="no-underline-link" target=_blank">Palazzo dei Diamanti</a></strong> is a key monument in <strong><a href="https://en.wikipedia.org/wiki/Ferrara" class="no-underline-link">Ferrara</a></strong> and a fundamental example of <strong><a href="https://en.wikipedia.org/wiki/Renaissance_architecture" class="no-underline-link" target="_blank">Renaissance architecture</a></strong>. 
+	    The monument is part of the <strong><a href="https://en.wikipedia.org/wiki/Addizione_Erculea" class="no-underline-link" target="_blank">Addizione Erculea</a></strong> an urban expansion project carried out in <strong><a href="https://en.wikipedia.org/wiki/Ferrara" class="no-underline-link" target="_blank">Ferrara</a></strong> at the end of the 15th century, initiated by <strong><a href="https://en.wikipedia.org/wiki/Ferrara" class="no-underline-link" target="_blank">Duke Ercole I d’Este</a></strong>, during the rule of the <strong><a href="https://en.wikipedia.org/wiki/House_of_Este" class="no-underline-link" target="_blank">Este court</a></strong>. This expansion secured a place for <strong><a href="https://en.wikipedia.org/wiki/Ferrara" class="no-underline-link" target="_blank">Ferrara</a></strong> in the <strong><a href="https://whc.unesco.org/en/list/733" class="no-underline-link" target="_blank">UNESCO World Heritage List</a></strong>. 
+	    <strong><a href="https://en.wikipedia.org/wiki/Palazzo_dei_Diamanti" class="no-underline-link" target="_blank">Palazzo dei Diamanti</a></strong> was commissioned by <strong><a href="https://en.wikipedia.org/wiki/Sigismondo_d%27Este_(1480%E2%80%931524)" class="no-underline-link" target="_blank">Sigismondo d’Este</a></strong> and served as the residence of several members of the <strong><a href="https://en.wikipedia.org/wiki/House_of_Este" class="no-underline-link" target="_blank">Este court</a></strong> family. Today, the <strong><a href="https://en.wikipedia.org/wiki/Palazzo_dei_Diamanti" class="no-underline-link" target="_blank">Palazzo dei Diamanti</a></strong> functions as an important cultural institution, hosting the <strong><a href="https://en.wikipedia.org/wiki/Pinacoteca_Nazionale_in_Ferrara" class="no-underline-link" target="_blank">Pinacoteca Nazionale</a></strong> and major temporary exhibitions, 
+	    yet it remains underrepresented in many structured digital resources. This made it an ideal subject for knowledge graph enrichment through semantic technologies, especially considering that <a href="foto.html" target="_blank">one of our team members</a> is originally from <strong><a href="https://en.wikipedia.org/wiki/Ferrara" class="no-underline-link" target="_blank">Ferrara</a></strong>. 
+	  </p>
+	  <br>
+	  <br>
+<h2>Objectives</h2>
+	
+	  <p><ul>
+		  <li>To fill the semantic gaps we were able to detect within <strong><a href="http://wit.istc.cnr.it/arco" class="no-underline-link" target="_blank">ArCo</a></strong>  
+		  </li>
+		  <li>To better our abilities in the use of <strong><a href="https://en.wikipedia.org/wiki/Large_language_model" class="no-underline-link" target="_blank">Large Language Models (LLMs)</a></strong>, particularly <strong><a href="https://chatgpt.com/" class="no-underline-link" target="_blank">ChatGPT</a></strong> and <strong><a href="https://www.deepseek.com/" class="no-underline-link" target="_blank">DeepSeek</a></strong>, 
+			  in order to create <strong><a href="https://en.wikipedia.org/wiki/Semantic_triple" class="no-underline-link" target="_blank">RDF triples</a></strong> that would add meaningful and semantically accurate information to the <strong><a href="http://wit.istc.cnr.it/arco" class="no-underline-link" target="_blank">ArCo knowledge graph</a></strong> </li>		  
+	  </ul>
+	  
+	  </p>
+	  <br>
+	<hr class="section-divider">
+	<section class="team-section">
+		<link rel="stylesheet" href="style.css">
+	
+  <h2 class="section-title">Team Members &#128109</h2>
+	<br>
+  <div class="team-grid">
+  <div class="team-card">Chiara Fabbri</div>
+  <div class="team-card">Carolina Battaglia</div>
+  <div class="team-card">Rossana Fetto</div>
+</div>
+</section>
+<br>
+<br>
+<div id="footer_wrap">
+ <footer class="inner">
+        <p style="color: black; font-size: 1.1em;">Website published with <a href="https://pages.github.com" class="no-underline-link github-pages-link-hover" style="color: black;"> GitHub Pages</a></p>
+      </footer>
+    </div>
+	
+  </main>
+</body>
+</html>
