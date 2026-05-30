@@ -161,7 +161,7 @@ nav {
 /* Contenuto principale */
 body.home .title-container {
   min-height: 400px;
-  background-image: url("assets/images/salto26.jpg");
+  background-image: url("images/salto26.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
