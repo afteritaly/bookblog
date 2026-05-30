@@ -272,6 +272,8 @@ body.recensioni .title-container {
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
+  text-color: #8B0000
+
 }
 
 body.sparqlqueries .title-container {
