@@ -13,6 +13,14 @@
 <body class="home">
 
  <nav>
+	 <div class="mobile-nav">
+
+  <span class="mobile-logo">CHIARA'S BOOK BLOG</span>
+
+  <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+</div>
     <ul>
       <li><a href="index.html"><b>Home</b></a></li>
       <li><a href="methodology.html"><b>Recensioni</b></a></li>
@@ -55,5 +63,13 @@
     </div>
 	
   </main>
+	<script>
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+</script>
 </body>
 </html>
