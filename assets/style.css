@@ -182,6 +182,9 @@ nav {
   font-size: 2rem;
   cursor: pointer;
 }
+.mobile-nav {
+  display: none;
+}
 
 /* ==========================
    MOBILE
@@ -216,7 +219,9 @@ nav {
   .nav-menu.active {
     display: flex;
   }
-
+.mobile-nav {
+    display: flex;
+}
   .nav-menu li {
     border-top: 1px solid rgba(255,255,255,0.2);
   }
@@ -240,6 +245,7 @@ nav {
     padding-top: 70px;
   }
 }
+
 
 /* Contenuto principale */
 body.home .title-container {
