@@ -554,5 +554,58 @@ code {
   border-radius: 8px;
 }
 
+/*book icons*/
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card img {
+  width: 140px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.rating {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  color: #f5a623; /* oro stelle */
+  font-family: Arial, sans-serif;
+}
+.rating i {
+  color: #f5a623;
+  margin-right: 2px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .book-card img {
+    width: 120px;
+    height: 180px;
+  }
+}
+
 
 
