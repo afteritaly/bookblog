@@ -506,18 +506,23 @@ code {
   color: #666;
 }
 
+/* =========================
+   LIBRERIA RECENSIONI
+========================= */
+
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 18px;
 
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
+
   justify-items: center;
 }
 
-/* CARD stile “cover da scaffale” */
+/* CARD libro */
 .book-card {
   display: flex;
   flex-direction: column;
@@ -525,13 +530,13 @@ code {
   text-decoration: none;
   color: inherit;
 
-  width: 120px;
+  width: 110px;
 }
 
-/* COVER PIÙ PICCOLA (effetto libreria) */
+/* COVER stile “scaffale” */
 .book-card img {
-  width: 110px;
-  height: 165px;
+  width: 100px;
+  height: 150px;
   object-fit: cover;
 
   border-radius: 6px;
@@ -540,39 +545,41 @@ code {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* hover “pick book” */
 .book-card:hover img {
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 8px 18px rgba(0,0,0,0.35);
 }
 
-/* TESTO RIDOTTO */
+/* titolo libro */
 .book-card h3 {
-  font-size: 0.75rem;
-  margin-top: 8px;
+  font-size: 0.7rem;
+  margin-top: 6px;
   text-align: center;
   line-height: 1.2;
 }
 
+/* autore */
 .book-card p {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: #777;
   text-align: center;
+  margin-top: 2px;
 }
 
-/* RATING COMPATTO */
+/* rating stelle */
 .rating {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: gold;
   margin-top: 3px;
 }
 
+/* peperoncini */
 .chili {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   margin-top: 2px;
 }
 
-/* MOBILE: 3 per riga */
+/* MOBILE */
 @media screen and (max-width: 768px) {
   .books-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -588,5 +595,3 @@ code {
     height: auto;
   }
 }
-
-
