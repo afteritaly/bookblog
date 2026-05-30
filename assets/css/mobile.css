@@ -508,3 +508,70 @@ dd p:first-child {
   font-size: .85em;
   font-style: italic;
 }
+
+@media screen and (max-width: 768px) {
+
+  div.shell {
+    width: 95%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+    padding: 10px;
+  }
+
+  header h2 {
+    font-size: 0.8em;
+    padding: 0 10px 10px;
+  }
+
+  .header-level-1 {
+    font-size: 1.5em;
+  }
+
+  .header-level-2 {
+    font-size: 1.3em;
+  }
+
+  .header-level-3 {
+    font-size: 1.15em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+}
+
+body {
+  font-size: 18px;
+}
+
+div.shell {
+  width: 95%;
+  max-width: 640px;
+}
+
+img {
+  max-width: 100%;
+}
