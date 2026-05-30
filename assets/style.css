@@ -152,7 +152,7 @@ nav {
 
   .nav-menu a {
     display: block;
-    padding: 15px;
+    padding: 8px;
     font-size: 1rem;
   }
 
@@ -176,7 +176,7 @@ body.home .title-container {
   position: relative;
 }
 
-body.methodology .title-container {
+body.recensioni .title-container {
   min-height: 400px;
   background-image: url("images/galleria.jpg");
   background-size: cover;
