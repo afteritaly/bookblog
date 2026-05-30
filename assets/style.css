@@ -140,16 +140,21 @@ nav {
 
   .nav-menu li {
     text-align: center;
+     width: 100%;
   }
 
   .nav-menu a {
     display: block;
     padding: 15px;
+    font-size: 1rem;
   }
 
   body {
     padding-top: 70px;
   }
+}
+.logo {
+  display: block;
 }
 /* Contenuto principale */
 body.home .title-container {
